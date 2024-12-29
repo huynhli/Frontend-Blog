@@ -1,0 +1,7 @@
+/*Formatting Footer*/
+.Footer {
+   display: flex;
+   justify-content: center;
+   padding: 1rem 2rem;
+   background: #c08ff7;
+}

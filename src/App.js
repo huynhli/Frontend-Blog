@@ -1,25 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
 
 {/*TODO fix import order*/}
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
-import Home from './pages/Home'
-import Projects from './pages/Projects';
-import SongStripper from './pages/SongStripper';
-import GuitarThing from './pages/GuitarThing';
-import Games from './pages/CreatedGames';
-import Mods from './pages/Mods';
-import BlogGrid from './pages/BlogGrid';
-import BlogPost from './pages/BlogPost';
-import Socials from './pages/Socials'
+import Home from './pages/home/Home'
+import Projects from './pages/projects/Projects';
+import BlogGrid from './pages/blog/BlogGrid';
+import BlogPost from './pages/blog/BlogPost';
 
-import Header from './components/Header'
-import Footer from './components/Footer';
-import DropDownNaviBar from './components/NavigationBar';
-import CoolPage from './pages/coolpage';
-import DigitalCameraDiary from './pages/DigitalCameraDiary';
-import AboutMe from './pages/AboutMe';
-
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer';
+import CoolPage from './pages/cool_page/coolpage';
+import DropDownNaviBar from './components/navigation_bar/NavigationBar';
+import DigitalCameraDiary from './pages/cameradiary/DigitalCameraDiary';
+import AboutMe from './pages/about_me/AboutMe';
 // import logo from './assets/images/favicon.ico' --> instead of importing we can require it
 // cannot access files in public, but CAN access files if using app.css
 
@@ -62,17 +55,15 @@ function App() {
 
               {/*Projects routes*/}
               <Route path="projects" element={<Projects />} />
-              <Route path="songstripper" element={<SongStripper />} />
-              <Route path="guitarthing" element={<GuitarThing />} />
-              <Route path="games" element={<Games />} />
-              <Route path="mods" element={<Mods />} />
 
               {/*About Me routes*/}
               <Route path="aboutme" element={<AboutMe />} />
-              <Route path="digitalcameradiary" element={<DigitalCameraDiary />} />
 
               {/*Socials dropdown routes*/}
-              <Route path="socials" element={<Socials />} />
+              <Route path="digitalcameradiary" element={<DigitalCameraDiary />} />
+
+              {/*Cool page*/}
+              <Route path="coolpage" element={<CoolPage />}/>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,99 @@
+/*Formatting Loading page*/
+.Loading {
+   display: flex;
+   justify-content: center;
+   padding: 1rem 2rem;
+   background: white;
+   font-size: xx-large;
+}
+
+/*Formatting BlogGrid*/
+.BlogGrid .main-section-box {
+   background-color: #5788d2;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   margin-bottom: 3em;
+   width: auto;
+   min-width: 100%;
+}
+
+.BlogGrid .flex-item {
+   flex: 1;
+   position: relative;
+   margin-left: 40px;
+   margin-right: 40px;
+   overflow: hidden;
+}
+
+.BlogGrid .flex-item .just-text {
+   overflow: hidden;
+   max-height: 450px;
+   margin-bottom: 2em;
+}
+
+.BlogGrid .main-section-header {
+   color: black;
+   text-decoration: none;
+   min-width: 300px;
+   width: 100%;
+   text-align: justify;
+}
+
+.BlogGrid .main-section-button {
+   margin-bottom: 2em;
+   display: block;
+   border: 2px solid rgb(199, 150, 224);
+   background-color: rgb(199, 135, 199);
+   color: white;
+   font-size: x-large;
+}
+
+.BlogGrid .extra-sections {
+   margin-left: 7em;
+}
+
+.BlogGrid .extra-sections-each-post {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* background-color: #04AA6D; */
+}
+
+.BlogGrid .extra-sections-list-item {
+   margin-inline-end: 5em;
+   width: 900px;
+   /* background-color: #0d47a1; */
+}
+
+.BlogGrid .extra-sections-button {
+   display: flex;
+   margin-top: auto;
+   margin-bottom: auto;
+   width: 300px;
+   height: 45px;
+   font-size: xx-large;
+}
+
+.BlogGrid .extra-sections .article-title {
+   max-width: 900px;
+}
+
+.BlogGrid .login-box {
+   display: block;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 3em;
+   width: 600px;
+   /* background-color: #04AA6D; */
+}
+
+.BlogGrid .login-button {
+   display: flex;
+   text-align: center;
+   margin: auto;
+   min-width: none;
+   max-width: fit-content;
+   background-color: #c08ff7;
+}

@@ -1,0 +1,54 @@
+/*Formatting ProjectsPage*/
+.ProjectsPage .banners-content {
+   display: flex;
+   overflow: hidden;
+   padding-inline-start: 10%;
+   padding-inline-end: 10%;
+   flex-direction: column;
+   margin-top: 1em;
+}
+
+.ProjectsPage .banners-header-hyperlink{
+   padding-left: 10px;
+   padding-bottom: 220px;
+   /* color: #0d9ea1; */
+   text-decoration: none; /*removes the underline from hyperlinks*/
+}
+
+.ProjectsPage .banners-body-paragraph {
+   /* background-color: lightblue; */
+   padding-inline-start: 1em;
+   padding-inline-end: 1em;
+}
+
+.ProjectsPage .banners-list-description {
+   padding-inline-end: 1em;
+   /* background-color: #0d47a1; */
+   
+}
+
+.ProjectsPage .temp-banner {
+   background-color: #04AA6D;
+   padding: 10px;
+   text-align: center;
+   /*TODO Should I be using childs here for all banners???*/
+}
+
+.ProjectsPage .banner-one-before-hovering {
+   /* background-color: #df33d6; */
+   padding: 10px;
+   position: relative;
+   margin-bottom: 40px;
+   border: 2px solid black;
+}
+
+.ProjectsPage .banner-one-while-hovering {
+   display: none;
+   padding-top: 80px;
+   /* border: 5px solid; */
+   /* background-color: #04AA6D; */
+}
+
+.ProjectsPage .banner-one-before-hovering:hover .banner-one-while-hovering {
+   display: block;
+}

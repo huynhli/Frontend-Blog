@@ -1,0 +1,52 @@
+/*Formatting About Me*/
+.AboutMe .center-big-box {
+   /* background-color: #5788d2; */
+   width: 850px;
+   height: auto;
+   margin-top: 3em;
+   margin-bottom: 3em;
+   /* text-align: center; */
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.AboutMe .each-image {
+   flex: 1;
+   width: 200px;
+}
+
+.AboutMe .top-box {
+   display: flex;
+   flex-direction: row;
+   border: 5px double black;
+} 
+
+.AboutMe .bottom-box {
+   margin-left: auto;
+   margin-right: auto;
+   width: 750px;
+   /* background-color: #5769d2; */
+}
+
+.AboutMe .header-no-bold {
+   font-size: xx-large;
+   font-weight: 500;
+}
+
+.AboutMe .better-link {
+   text-decoration: none;
+   color: #df33d6;
+}
+
+.AboutMe .list-style {
+   font-size: x-large;
+   font-weight: 600;
+}
+
+.AboutMe .center-text {
+   text-align: center;
+   font-size: larger;
+}
