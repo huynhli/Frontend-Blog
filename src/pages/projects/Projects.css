@@ -5,7 +5,8 @@
    padding-inline-start: 10%;
    padding-inline-end: 10%;
    flex-direction: column;
-   margin-top: 1em;
+   margin-top: 3em;
+   margin-bottom: 3em;
 }
 
 .ProjectsPage .banners-header-hyperlink{
@@ -31,14 +32,12 @@
    background-color: #04AA6D;
    padding: 10px;
    text-align: center;
-   /*TODO Should I be using childs here for all banners???*/
 }
 
 .ProjectsPage .banner-one-before-hovering {
    /* background-color: #df33d6; */
    padding: 10px;
    position: relative;
-   margin-bottom: 40px;
    border: 2px solid black;
 }
 
@@ -50,5 +49,5 @@
 }
 
 .ProjectsPage .banner-one-before-hovering:hover .banner-one-while-hovering {
-   display: block;
+   display: block;   
 }

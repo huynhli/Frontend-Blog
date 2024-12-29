@@ -1,6 +1,7 @@
 import './Projects.css';
 
 import React from 'react';
+import websiteTimeline from '../../assets/Website Timeline Graphics.png';
 
 export default function Projects (){
    return (
@@ -13,7 +14,7 @@ export default function Projects (){
                      <a className="banners-header-hyperlink" href="/">Frontend Website/Blog</a>
                   </h1> 
                      <div className="banner-one-while-hovering">
-                        <img src="" alt="There should be a timeline image here"></img>
+                        <img src={websiteTimeline} alt="There should be a timeline image here"></img>
                         <p className="banners-body-paragraph">This is the current website you are looking at. It is a backend-less SPA (single page application) that works using React and Express for routing.</p>
                      </div>
                </div>

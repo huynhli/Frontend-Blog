@@ -1,11 +1,56 @@
 import './Home.css';
+
+import React, { useState, useEffect } from 'react';
 import BlogPost from '../blog/BlogPost';
+import { Link } from 'react-router-dom';
 
 export default function Home(){
 
    //Helper for button click routing
    const goToBlogGrid = () => {
       window.location.href = '/bloggrid'
+   }
+
+   //Still counting
+   const [loading, setLoading] = useState(true);
+
+   //helper for calc post nums -> can't reuse for static site!
+   const [fileCount, setFileCount] = useState(0);
+   useEffect(() => {
+      const checkFiles = async () => {
+         let count = 0;
+         while (true) {
+            try {
+               const response = await fetch(`/assets/BlogPost${count + 1}.txt`);
+
+               //not necessary for this website type but error handling -> server issues, etc. 
+               if (!response.ok) {
+                  break;
+               }
+               
+               //response.status is always 200, even for files that don't exist
+               //therefore checks for line that only empty files have
+               if ((await response.text()).includes("<!doctype html>")) {
+                  break;
+               }
+               
+               count++;
+            } catch (error) {
+               //in case fetch throws an error
+               console.error('Error fetching file:', error);
+               break;
+            }
+         }
+         setFileCount(count);
+         setLoading(false);
+      };
+      checkFiles();
+   }, []);
+   
+
+   //loading page
+   if(loading){
+      return <div className='Loading'>Loading...</div>;
    }
 
 
@@ -26,26 +71,26 @@ export default function Home(){
             </div>
 
             <div className="line-divider">
-               {/* <h1>hi</h1> */}
+
             </div>
 
             <div className="blog-stuff">
                <div className="articles">
                   <div className="blog-block">
                   {/* TODO fix links here to be dynamic (?) */}
-                     <p><a href="/blogposts/blogpost?fileNum=1" className="article-heading">
-                     <BlogPost renderIntro={true} fileNum={1}/>
-                     </a></p>
+                     <p><Link to={`/blogposts/blogpost?fileNum=${fileCount}`} className="article-heading">
+                     <BlogPost renderIntro={true} fileNum={fileCount}/>
+                     </Link></p>
                   </div>
                   <div className="blog-block">
-                     <p><a href="/blogposts/blogpost?fileNum=2" className="article-heading">
-                     <BlogPost renderIntro={true} fileNum={2}/>
-                     </a></p>
+                     <p><Link to={`/blogposts/blogpost?fileNum=${fileCount-1}`} className="article-heading">
+                     <BlogPost renderIntro={true} fileNum={fileCount-1}/>
+                     </Link></p>
                   </div>
                   <div className="blog-block">
-                     <p><a href="/blogposts/blogpost?fileNum=3" className="article-heading">
-                     <BlogPost renderIntro={true} fileNum={3}/>
-                     </a></p>
+                     <p><Link to={`/blogposts/blogpost?fileNum=${fileCount-2}`} className="article-heading">
+                     <BlogPost renderIntro={true} fileNum={fileCount-2}/>
+                     </Link></p>
                   </div>
                </div>
                <div className="view-all-button">

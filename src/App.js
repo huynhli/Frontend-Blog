@@ -1,26 +1,20 @@
 import React from 'react';
-
-{/*TODO fix import order*/}
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
-import Home from './pages/home/Home'
-import Projects from './pages/projects/Projects';
-import BlogGrid from './pages/blog/BlogGrid';
-import BlogPost from './pages/blog/BlogPost';
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
-import CoolPage from './pages/cool_page/coolpage';
 import DropDownNaviBar from './components/navigation_bar/NavigationBar';
-import DigitalCameraDiary from './pages/cameradiary/DigitalCameraDiary';
+
+import Home from './pages/home/Home'
+import BlogGrid from './pages/blog/BlogGrid';
+import BlogPost from './pages/blog/BlogPost';
+import Projects from './pages/projects/Projects';
 import AboutMe from './pages/about_me/AboutMe';
-// import logo from './assets/images/favicon.ico' --> instead of importing we can require it
-// cannot access files in public, but CAN access files if using app.css
-
-
+import CoolPage from './pages/cool_page/coolpage';
 
 // class App extends Component {
 //   render() {
-function App() {
+export default function App() {
   // helper for formatting all pages with components
   const Layout = () => {
     return (
@@ -60,7 +54,6 @@ function App() {
               <Route path="aboutme" element={<AboutMe />} />
 
               {/*Socials dropdown routes*/}
-              <Route path="digitalcameradiary" element={<DigitalCameraDiary />} />
 
               {/*Cool page*/}
               <Route path="coolpage" element={<CoolPage />}/>
@@ -71,6 +64,3 @@ function App() {
     </div>
   );
 }
-
-
-export default App;

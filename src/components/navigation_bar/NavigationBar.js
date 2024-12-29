@@ -62,10 +62,9 @@ export default function DropDownNaviBar(){
                      <a href="https://www.linkedin.com/in/liam-huynh-91aa1a1a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                      <a href="https://open.spotify.com/user/trachscor" target="_blank" rel="noopener noreferrer">Spotify</a>
                      <a href="https://steamcommunity.com/id/trach_scor/" target="_blank" rel="noopener noreferrer">Steam</a>
+                     <a href="https://github.com/huynhli" target="_blank" rel="noopener noreferrer">Github</a>
                      <a href="https://letterboxd.com/liamh121/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
                      <a href="https://www.goodreads.com/user/show/137412243-liam" target="_blank" rel="noopener noreferrer">Goodreads</a>
-                     
-                     <a href="/digitalcameradiary">Digital Camera Diary</a>
                </div>
             </div>
 

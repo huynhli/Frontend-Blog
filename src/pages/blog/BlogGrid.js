@@ -23,12 +23,13 @@ export default function BlogGrid (){
          while (true) {
             try {
                const response = await fetch(`/assets/BlogPost${count + 1}.txt`);
+
                //not necessary for this website type but error handling -> server issues, etc. 
                if (!response.ok) {
                   break;
                }
                
-               //as no proper server, response.status is 200
+               //response.status is always 200, even for files that don't exist
                //therefore checks for line that only empty files have
                if ((await response.text()).includes("<!doctype html>")) {
                   break;
