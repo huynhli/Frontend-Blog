@@ -1,0 +1,641 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/*Formatting Header*/
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem 1rem 0rem;  /*top, right, bottom, left*/
+  background: #ded0ff;
+}
+
+.Header p {
+  text-decoration: none;
+  color: #18424c;
+}
+
+.Header ul {
+  list-style: none;
+  display: flex;
+}
+
+.Header ul li.RightSide {
+  padding-left: 2rem;
+}
+
+.Header a {
+  text-decoration: none;
+  color: purple;
+}
+
+.Header a.RightSide {
+  text-decoration: none;
+  color: purple;
+  display: flex;
+}
+
+
+/*Formatting DropDownNaviBar*/
+.DropDownNaviBar {
+  display: flex; /*enters "flexbox layout mode" = useful/auto sizing/spacing*/
+  /*justify-content: space-around; /*how items are spread inside flexbox*/
+  /* max-width: 800px, auto; */
+  
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.DropDownNaviBar .entire-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #0d9ea1;
+  min-width: 100%;
+}
+
+.DropDownNaviBar .dropdown {
+  flex: 1;
+  /* margin: 0; */
+  position: relative;
+}
+
+.DropDownNaviBar .about-me-btn {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  background-color: white;
+}
+
+.DropDownNaviBar .about-me-btn:hover {
+  background-color: peachpuff;
+}
+
+.DropDownNaviBar .empty-space {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.DropDownNaviBar .seperate-dropdown {
+  position: relative;
+}
+
+
+.DropDownNaviBar .websites-button {
+  border: none;
+  color: black; 
+  background-color: green;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  min-width: 250px;
+  width: 100%;
+  text-indent: 5px;
+  padding: 12px 4px;
+}
+
+.DropDownNaviBar .websites-button:hover {
+  color: orange; 
+  padding: 12px 4px;
+  border: none;
+}
+
+.DropDownNaviBar .websites-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100%;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 100%;
+  top: 0;
+}
+
+.DropDownNaviBar .websites-content a {
+  color: black;
+  padding: 12px 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.DropDownNaviBar .websites-content a:hover {
+  background-color: rgb(170, 7, 7);
+}
+
+.DropDownNaviBar .seperate-dropdown:hover .websites-content{
+  display: block;
+}
+
+.DropDownNaviBar .seperate-dropdown:hover .websites-button {
+  background-color: purple;
+  padding: 12px 4px;
+}
+
+
+.DropDownNaviBar .my-btn {
+  /* background-color: #04AA6D; */
+  border: 1px solid black;
+  color: black; 
+  background-color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  min-width: 250px;
+  width: 100%;
+  /* margin: auto; */
+}
+
+.DropDownNaviBar .my-btn:hover {
+  border: none;
+  color: black; 
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.DropDownNaviBar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100%;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+  
+.DropDownNaviBar .dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.DropDownNaviBar .dropdown-content a:hover {
+  background-color: lightgray;
+}
+
+.DropDownNaviBar .dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.DropDownNaviBar .dropdown:hover .my-btn {
+  background-color: peachpuff;
+  border: 1px solid black;
+}
+
+
+
+/*Formatting Footer*/
+.Footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: #c08ff7;
+}
+
+/*Formatting Loading page*/
+.Loading {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: white;
+  font-size: xx-large;
+}
+
+/*Formatting Homepage*/
+.HomePage .main-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.HomePage .bio {
+  /* background-color: #df33d6; */
+  margin-left: 160px;
+  width: 300px;
+}
+
+.HomePage .bio .square-pic-in-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-left: 18px;
+  align-items: center;
+  /* background-color: #04AA6D; */
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  border: 5px solid #ded0ff;
+}
+
+.HomePage .bio .center-portrait {
+  max-width: 250px; 
+}
+
+.HomePage .bio .text {
+  /* padding-left: 1em; */
+  /* background-color: #0d9ea1; */
+  display: flex;
+}
+
+.HomePage .bio .text-like-heading {
+  /* padding-left: 1em; */
+  /* background-color: #0d9ea1; */
+  display: block;
+  font-size: medium;
+  flex-wrap: wrap;
+}
+
+.HomePage .bio .text-like-heading-list {
+  /* background-color: #0d9ea1; */
+  display: block;
+  font-size: x-large;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.HomePage .line-divider {
+  display: block;
+  background-color: black;
+  margin-left: 40px;
+  width: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.HomePage .blog-stuff {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1165px;
+}
+
+.HomePage .blog-stuff .blog-block {
+  /* background-color: #0d47a1; */
+  margin-bottom: 60px;
+  margin-left: 2em;
+}
+
+.HomePage .blog-stuff .article-heading {
+  color: black;
+  text-decoration: none;
+}
+
+.HomePage .view-all-button {
+  display: block;
+  text-align: center;
+  /* background-color: #18424c; */
+  margin-top: 40px;
+  width: 1190px;
+  height: 80px;
+}
+
+.HomePage .view-all-button .button-size {
+  min-height: 50px;
+  min-width: 300px;
+}
+
+.HomePage .articles {
+  min-height: 800px;
+  max-height: 800px;
+  overflow-y: scroll;
+  /* background-color: aqua; */
+}
+
+/*Formatting BlogGrid*/
+.BlogGrid .main-section-box {
+  background-color: #5788d2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 3em;
+  width: auto;
+  min-width: 100%;
+}
+
+.BlogGrid .flex-item {
+  flex: 1;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.BlogGrid .flex-item .just-text {
+  overflow: hidden;
+  max-height: 450px;
+  margin-bottom: 2em;
+}
+
+.BlogGrid .main-section-header {
+  color: black;
+  text-decoration: none;
+  min-width: 300px;
+  width: 100%;
+  text-align: justify;
+}
+
+.BlogGrid .main-section-button {
+  margin-bottom: 2em;
+  display: block;
+  border: 2px solid rgb(199, 150, 224);
+  background-color: rgb(199, 135, 199);
+  color: white;
+  font-size: x-large;
+}
+
+.BlogGrid .extra-sections {
+  margin-left: 7em;
+}
+
+.BlogGrid .extra-sections-each-post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: #04AA6D; */
+}
+
+.BlogGrid .extra-sections-list-item {
+  margin-inline-end: 5em;
+  width: 900px;
+  /* background-color: #0d47a1; */
+}
+
+.BlogGrid .extra-sections-button {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 300px;
+  height: 45px;
+  font-size: xx-large;
+}
+
+.BlogGrid .extra-sections .article-title {
+  max-width: 900px;
+}
+
+.BlogGrid .login-box {
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  width: 600px;
+  /* background-color: #04AA6D; */
+}
+
+.BlogGrid .login-button {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  min-width: none;
+  max-width: fit-content;
+  background-color: #c08ff7;
+}
+
+
+/*Formatting ProjectsPage*/
+.ProjectsPage .banners-content {
+  display: flex;
+  overflow: hidden;
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.ProjectsPage .banners-header-hyperlink{
+  padding-left: 10px;
+  padding-bottom: 220px;
+  /* color: #0d9ea1; */
+  text-decoration: none; /*removes the underline from hyperlinks*/
+}
+
+.ProjectsPage .banners-body-paragraph {
+  /* background-color: lightblue; */
+  padding-inline-start: 1em;
+  padding-inline-end: 1em;
+}
+
+.ProjectsPage .banners-list-description {
+  padding-inline-end: 1em;
+  /* background-color: #0d47a1; */
+  
+}
+
+.ProjectsPage .temp-banner {
+  background-color: #04AA6D;
+  padding: 10px;
+  text-align: center;
+  /*TODO Should I be using childs here for all banners???*/
+}
+
+.ProjectsPage .banner-one-before-hovering {
+  /* background-color: #df33d6; */
+  padding: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  border: 2px solid black;
+}
+
+.ProjectsPage .banner-one-while-hovering {
+  display: none;
+  padding-top: 80px;
+  /* border: 5px solid; */
+  /* background-color: #04AA6D; */
+}
+
+.ProjectsPage .banner-one-before-hovering:hover .banner-one-while-hovering {
+  display: block;
+}
+
+.ProjectsPage .banner-two-before-hovering {
+  /* background-color: darkorange; */
+  padding: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  border: 2px solid black;
+}
+
+.ProjectsPage .banner-two-while-hovering {
+  display: none;
+  padding-top: 80px;
+  /* position: absolute; */
+  /* border: 5px solid; */
+  /* background-color: #04AA6D; */
+}
+
+.ProjectsPage .banner-two-before-hovering:hover .banner-two-while-hovering {
+  display: block;
+}
+
+.ProjectsPage .banner-three-before-hovering {
+  /* background-color: darkred; */
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px; /* TODO why is this one 20 ???? */
+  border: 2px solid black;
+}
+
+.ProjectsPage .banner-three-while-hovering {
+  display: none;
+  padding-top: 80px;
+  /* position: absolute; */
+  /* border: 5px solid; */
+  /* background-color: #04AA6D; */
+}
+
+.ProjectsPage .banner-three-before-hovering:hover .banner-three-while-hovering {
+  display: block;
+}
+
+/*Formatting About Me*/
+.AboutMe .center-big-box {
+  /* background-color: #5788d2; */
+  width: 850px;
+  height: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.AboutMe .each-image {
+  flex: 1;
+  width: 200px;
+}
+
+.AboutMe .top-box {
+  display: flex;
+  flex-direction: row;
+  border: 5px double black;
+} 
+
+.AboutMe .bottom-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  /* background-color: #5769d2; */
+}
+
+.AboutMe .header-no-bold {
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+.AboutMe .better-link {
+  text-decoration: none;
+  color: #df33d6;
+}
+
+.AboutMe .list-style {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.AboutMe .center-text {
+  text-align: center;
+  font-size: larger;
+}
+
+/*Formatting coolpage*/
+.coolpage .big-div {
+  display: block;
+  width: 100%;
+  background-color: #0d47a1;
+  height: 1000px;
+  
+}
+
+.coolpage .banners-background {
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(90deg,
+  rgba(255, 0, 0, 1) 0%,
+  rgba(255, 154, 0, 1) 10%,
+  rgba(208, 222, 33, 1) 20%,
+  rgba(79, 220, 74, 1) 30%,
+  rgba(63, 218, 216, 1) 40%,
+  rgba(47, 201, 226, 1) 50%,
+  rgba(28, 127, 238, 1) 60%,
+  rgba(95, 21, 242, 1) 70%,
+  rgba(186, 12, 248, 1) 80%,
+  rgba(251, 7, 217, 1) 90%,
+  rgba(255, 0, 0, 1) 100%);
+  background-size: 200% 100%;
+  animation: slide 2s linear infinite;
+
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0; /* The image width */
+  }
+}
+
+.coolpage .center-text {
+  text-align: center;
+}
+
+/*For passing article titles + intros*/
+.intro-pass {
+  font-size: x-large;
+}
+
+/*WIP center text*/
+.wip-box {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wip-center {
+  text-align: center;
+}
+
+/*Color for random testing*/
+.aqua {
+  color: aqua;
+}
