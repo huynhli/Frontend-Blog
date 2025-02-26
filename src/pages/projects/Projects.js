@@ -15,7 +15,8 @@ export default function Projects (){
                   </h1> 
                      <div className="banner-one-while-hovering">
                         <img src={websiteTimeline} alt="There should be a timeline image here"></img>
-                        <p className="banners-body-paragraph">This is the current website you are looking at. It is a backend-less SPA (single page application) that works using React and Express for routing.</p>
+                        <p className="banners-body-paragraph">This is the current website you are looking at. It is a backend-less SPA 
+                           (single page application) that was built using React and React Router for routing.</p>
                      </div>
                </div>
             </div>
