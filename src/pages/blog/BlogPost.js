@@ -18,7 +18,7 @@ export default function BlogPost1 ({ fileNum, renderIntro, renderTitle }){
 
    const [lines, setLines] = useState([]);
    
-   //parses .txt to array of lines
+   //parses .txt to array of lines at page load
    useEffect(() => {
       fetch(`/assets/BlogPost${effectiveFileNum}.txt`) 
          // Read the file as plain text
