@@ -121,6 +121,22 @@
    /* margin: auto; */
 }
 
+.DropDownNaviBar .my-btn-socials {
+   /* background-color: #04AA6D; */
+   border: 1px solid black;
+   color: black; 
+   background-color: white;
+   padding: 15px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 16px;
+   min-width: 250px;
+   width: 100%;
+   cursor: pointer;
+   /* margin: auto; */
+}
+
 .DropDownNaviBar .my-btn:hover {
    border: none;
    color: black; 
@@ -129,6 +145,7 @@
    text-decoration: none;
    display: block;
    font-size: 16px;
+   cursor: default;
 }
 
 /*Universal Dropdown styling*/

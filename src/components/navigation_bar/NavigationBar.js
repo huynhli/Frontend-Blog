@@ -52,7 +52,7 @@ export default function DropDownNaviBar(){
 
             {/*Socials*/}  
             <div className="dropdown">
-               <button className="my-btn">Socials</button>
+               <button className="my-btn-socials">Socials</button>
                <div className="dropdown-content">
                      <a href="https://www.instagram.com/liam.__.h/" target="_blank" rel="noopener noreferrer">Instagram</a>
                      <a href="https://www.linkedin.com/in/liam-huynh-91aa1a1a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
