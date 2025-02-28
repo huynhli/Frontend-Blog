@@ -13,10 +13,6 @@ export default function DropDownNaviBar(){
       window.location.href = '/BlogGrid'
    }
 
-   const goToSocials = () => {
-      window.location.href= '/Socials'
-   }
-
    return(
       <nav className='DropDownNaviBar'>
 
