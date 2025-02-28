@@ -49,6 +49,18 @@
    font-size: x-large;
 }
 
+.BlogGrid .main-section-button:hover {
+   border: 2px solid rgba(199, 135, 199, 0.781);
+   background-color: rgba(199, 135, 199, 0.781);
+   cursor: pointer;
+}
+
+.BlogGrid .main-section-button:active {
+   border: 2px solid rgba(167, 115, 167, 0.781);
+   background-color: rgba(167, 115, 167, 0.781);
+   cursor: pointer;
+}
+
 .BlogGrid .extra-sections {
    margin-left: 7em;
 }

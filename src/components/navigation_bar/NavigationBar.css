@@ -38,6 +38,10 @@
    background-color: peachpuff;
 }
 
+.DropDownNaviBar .about-me-btn:active {
+   background-color: rgba(255, 218, 185, 0.733);
+}
+
 /*Nested Dropdown*/
 .DropDownNaviBar .seperate-dropdown {
    position: relative;
@@ -137,17 +141,6 @@
    /* margin: auto; */
 }
 
-.DropDownNaviBar .my-btn:hover {
-   border: none;
-   color: black; 
-   padding: 15px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: block;
-   font-size: 16px;
-   cursor: default;
-}
-
 /*Universal Dropdown styling*/
 .DropDownNaviBar .dropdown-content {
    display: none;
@@ -177,4 +170,25 @@
 .DropDownNaviBar .dropdown:hover .my-btn {
    background-color: peachpuff;
    border: 1px solid black;
+}
+
+.DropDownNaviBar .dropdown:hover .my-btn {
+   background-color: peachpuff;
+   border: 1px solid black;
+}
+
+.DropDownNaviBar .dropdown:active .my-btn {
+   background-color: rgba(255, 218, 185, 0.733);
+   border: 1px solid black;
+}
+
+.DropDownNaviBar .my-btn-socials:hover {
+   border: 1px solid black;
+   color: black; 
+   padding: 15px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 16px;
+   cursor: default;
 }

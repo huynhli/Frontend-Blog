@@ -6,7 +6,7 @@ import websiteTimeline from '../../assets/Website Timeline Graphics.png';
 export default function Projects (){
    return (
       <div className="ProjectsPage"> 
-         <div className="banners-background">
+         <div>
             <div className="banners-content">
 
                <div className="banner-one-before-hovering">
